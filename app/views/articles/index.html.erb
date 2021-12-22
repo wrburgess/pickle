@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Hello, Articles!</h1>
+  <ul>
+    <% @articles.each do |article| %>
+      <li class="bongo"><%= link_to article.title, article_path(article) %></li>
+    <% end %>
+  </ul>
+
+  <div data-controller="articles">
+    <input type="text">
+    <button>Greet</button>
+  </div>
+</div>
